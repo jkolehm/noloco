@@ -1,7 +1,7 @@
 # Run Instructions
 
 ## Installation
-Run following commands on a machine equipped with Nvidia GPUs.
+Run following commands on a machine(s) equipped with Nvidia GPUs.
 ```commandline
 pip install .
 ```
@@ -20,6 +20,9 @@ train_data_loader:
   access_token: *access_token
   path: *path_local_c4_en_copy
 ```
+
+### Data Preparation
+C4 data is processed on the fly and does not require any additional steps apart from loading the files from git. The reddit data is pre-tokenized and needs to be prepared by the user. For preparing data one should follow the standard practice of tokenizing the text documents from HuggingFace pushshift reddit and saving them as parquet files with the input_ids and attention_mask. The data format is identical to the input data used in https://github.com/gensyn-ai/hdee.
 
 ### Running
 Got to the script folder and modify run.sh to include the config you want to run (e.g. c4_diloco_100m_8.yaml):
@@ -41,4 +44,3 @@ torchrun \
 ```
 
 Note that the total number of workers is dictated by nnodes and nproc-per-node (in this case 8). Launch the training by running the script in every node that should participate on the training. The environmental variables MASTER_ADDR and MASTER_PORT should be set to match one of the nodes with a port and IP address that is reacheble from all nodes.
->>>>>>> 909e6be (NeurIPS 2025 source code.)
