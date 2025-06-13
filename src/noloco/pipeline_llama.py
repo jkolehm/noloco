@@ -2,7 +2,7 @@ import torch
 import torch.distributed as dist
 from transformers import LlamaConfig, LlamaForCausalLM
 
-from dipaco.dipaco_pipeline import DiPaCoMicroBatching
+from noloco.dipaco_pipeline import DiPaCoMicroBatching
 
 
 class LLamaLayerWrapper(torch.nn.Module):

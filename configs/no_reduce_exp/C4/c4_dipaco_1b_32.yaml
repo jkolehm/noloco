@@ -4,13 +4,13 @@ defaults:
   - _self_
   - c4_base_1b
 
-exp_name: c4_dipaco_1b_32
+exp_name: c4_noloco_1b_32
 dp_world_size: 16
 batch_size: 64
 log_dir: /home/gensyn/shared/jari/experiments
 
 optimizer:
-  _target_: dipaco.pipeline_diloco_optimizer.PipelineDiLoCoOptimizerBuilder
+  _target_: noloco.pipeline_diloco_optimizer.PipelineDiLoCoOptimizerBuilder
   number_of_local_steps: 100
   outer_lr: 0.7
   outer_momentum: 0.3
