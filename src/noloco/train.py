@@ -8,7 +8,7 @@ import torch.distributed as dist
 from hydra.utils import instantiate
 from omegaconf import DictConfig, OmegaConf
 from torch.utils.tensorboard import SummaryWriter
-from dipaco.create_process_groups import create_process_groups
+from noloco.create_process_groups import create_process_groups
 
 
 def instantiate_and_set(params, dp_group):
