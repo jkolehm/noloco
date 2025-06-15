@@ -66,7 +66,7 @@ The C4 dataset is processed on the fly and requires no additional preprocessing 
 **Reddit Dataset:**  
 The Reddit data must be **pre-tokenized** by the user prior to training. To prepare it:
 
-1. Download the HuggingFace [Pushshift Reddit dataset](https://huggingface.co/datasets/pushshift/reddit).
+1. Download the HuggingFace [Pushshift Reddit dataset](https://huggingface.co/datasets/fddemarco/pushshift-reddit-comments).
 2. Tokenize the text documents using your model tokenizer (e.g., LLaMA 3).
 3. Save the tokenized outputs as **Parquet** files containing `input_ids` and `attention_mask` fields.
 
