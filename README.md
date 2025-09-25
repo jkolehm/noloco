@@ -2,6 +2,7 @@
 
 This repository implements __NoLoCo__, a novel optimization method designed to reduce communication overhead during the training of large language models. By eliminating explicit parameter synchronization, NoLoCo achieves faster convergence rates and reduced idling time compared to existing methods.
 
+<!--
 ## 🔗 Paper
 
 The full paper is available on [arXiv](https://arxiv.org/abs/2506.10911). 
@@ -12,7 +13,7 @@ The full paper is available on [arXiv](https://arxiv.org/abs/2506.10911).
 </a>
 
 - Tech Blog: https://www.gensyn.ai/
-
+-->
 
 
 ## ⚙️ Features
@@ -115,8 +116,7 @@ Key findings:
 - No global blocking communication.
 - Speedup compared to all-reduce scales as **log(N)**; for 1024 GPUs, this translates to a 10× improvement over standard all-reduce.
 
-Detailed benchmarking results and graphs are available in the [paper](https://arxiv.org/abs/2506.10911).
-
+<!--
 ## 📄 Citation
 
 If you use this code or method in your research, please cite the following paper:
@@ -133,4 +133,4 @@ If you use this code or method in your research, please cite the following paper
 ## 📬 Contact
 
 For questions, suggestions, or collaborations, please contact the authors via jari@gensyn.ai or open an issue on this GitHub repository.
-
+-->
