@@ -1,11 +1,8 @@
 [project]
-name = "weighted_diloco"
+name = "noloco"
 version = "0.1.0"
 description = "Default template for PDM package"
-authors = [
-    { name = "Gensyn Administrator", email = "admin@gensyn.ai" },
-    {name = "oguzhanersoy", email = "oguzer2006@gmail.com"},
-]
+authors = []
 dependencies = [
     "pyarrow",
     "tensorboard",
