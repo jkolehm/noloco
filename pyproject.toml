@@ -41,7 +41,6 @@ venv = ".venv"
 #
 # Also see https://github.com/PyCQA/isort/issues/1518
 profile = "black"
-known_first_party = [ "gensyn" ]
 
 [tool.ruff.lint]
 # extra rules to add on top of the default ruff rule set.
